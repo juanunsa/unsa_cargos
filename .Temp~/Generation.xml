@@ -1,0 +1,99 @@
+
+<Generation>
+  <Exception target="Project">
+    <Title>Error generating application bundles</Title>
+    <Reason>Bundling failed because of input errors</Reason>
+    <Cause>com.webratio.generator.internal.tools.WebpackBuilder$BuildFailedException: Bundling failed because of input errors
+--------------------------------------------------------------------------------
+Module not found: Error: Can't resolve '@webratio/components-client-validation/src/CompareValidationRuleService' in 'C:\WebRatio\WebRatio Platform Community 9.0.21\workspace\.wrwork\unsa_cargos\app\services'
+--------------------------------------------------------------------------------
+Module not found: Error: Can't resolve '@webratio/components-client-validation/src/CompareValidationRuleService' in 'C:\WebRatio\WebRatio Platform Community 9.0.21\workspace\.wrwork\unsa_cargos\app\services'
+--------------------------------------------------------------------------------
+Module not found: Error: Can't resolve '@webratio/components-client-validation/src/MandatoryValidationRuleService' in 'C:\WebRatio\WebRatio Platform Community 9.0.21\workspace\.wrwork\unsa_cargos\app\services'
+--------------------------------------------------------------------------------
+Module not found: Error: Can't resolve '@webratio/components-client-validation/src/MandatoryValidationRuleService' in 'C:\WebRatio\WebRatio Platform Community 9.0.21\workspace\.wrwork\unsa_cargos\app\services'
+--------------------------------------------------------------------------------
+Module not found: Error: Can't resolve '@webratio/components-client-validation/src/MandatoryValidationRuleService' in 'C:\WebRatio\WebRatio Platform Community 9.0.21\workspace\.wrwork\unsa_cargos\app\services'
+--------------------------------------------------------------------------------
+Module not found: Error: Can't resolve '@webratio/components-client-validation/src/MandatoryValidationRuleService' in 'C:\WebRatio\WebRatio Platform Community 9.0.21\workspace\.wrwork\unsa_cargos\app\services'
+--------------------------------------------------------------------------------
+Module not found: Error: Can't resolve '@webratio/components-client-validation/src/MandatoryValidationRuleService' in 'C:\WebRatio\WebRatio Platform Community 9.0.21\workspace\.wrwork\unsa_cargos\app\services'
+--------------------------------------------------------------------------------
+Module not found: Error: Can't resolve '@webratio/components-client-validation/src/PasswordStrengthValidationRuleService' in 'C:\WebRatio\WebRatio Platform Community 9.0.21\workspace\.wrwork\unsa_cargos\app\services'
+--------------------------------------------------------------------------------
+Module not found: Error: Can't resolve '@webratio/components-client-validation/src/PasswordStrengthValidationRuleService' in 'C:\WebRatio\WebRatio Platform Community 9.0.21\workspace\.wrwork\unsa_cargos\app\services'
+--------------------------------------------------------------------------------
+Module not found: Error: Can't resolve '@webratio/components-client-validation/src/PasswordStrengthValidationRuleService' in 'C:\WebRatio\WebRatio Platform Community 9.0.21\workspace\.wrwork\unsa_cargos\app\services'
+--------------------------------------------------------------------------------
+
+	at com.webratio.generator.internal.tools.WebpackBuilder$Instance.build(WebpackBuilder.java:166)
+	at com.webratio.generator.internal.tools.WebpackBuilder$Instance.build(WebpackBuilder.java:114)
+	at com.webratio.generator.internal.tools.WebpackBuilder.buildOnce(WebpackBuilder.java:91)
+	at com.webratio.generator.helpers.ToolsHelper.buildWebpackProject(ToolsHelper.java:50)
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:566)
+	at com.webratio.commons.base.reflect.AbstractDispatcher$SimpleInvoker.invoke(AbstractDispatcher.java:320)
+	at com.webratio.commons.base.reflect.AbstractDispatcher.invokeMethod(AbstractDispatcher.java:105)
+	at com.webratio.commons.base.reflect.DefaultDispatcher$Instance.invokeMethod(DefaultDispatcher.java:1)
+	at com.webratio.commons.base.reflect.CompoundDispatcher.invokeMethod(CompoundDispatcher.java:93)
+	at com.webratio.commons.transform.groovy.mixin.DispatcherClosure.doInvoke(DispatcherClosure.java:79)
+	at com.webratio.commons.transform.groovy.mixin.DispatcherClosure.call(DispatcherClosure.java:74)
+	at jdk.internal.reflect.GeneratedMethodAccessor61.invoke(Unknown Source)
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at Assemble/Bundle_template.&lt;closure2&gt;(Bundle.template:10)
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.webratio.generator.helpers.GenerationHelpersBean.doProcessFile(GenerationHelpersBean.java:258)
+	at com.webratio.generator.helpers.GenerationHelpersBean.processWorkFile(GenerationHelpersBean.java:160)
+	at jdk.internal.reflect.GeneratedMethodAccessor121.invoke(Unknown Source)
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:566)
+	at com.webratio.commons.base.reflect.AbstractDispatcher$SimpleInvoker.invoke(AbstractDispatcher.java:320)
+	at com.webratio.commons.base.reflect.AbstractDispatcher$OverloadedInvoker.invoke(AbstractDispatcher.java:776)
+	at com.webratio.commons.base.reflect.AbstractDispatcher.invokeMethod(AbstractDispatcher.java:105)
+	at com.webratio.commons.base.reflect.DefaultDispatcher$Instance.invokeMethod(DefaultDispatcher.java:1)
+	at com.webratio.commons.base.reflect.CompoundDispatcher.invokeMethod(CompoundDispatcher.java:93)
+	at com.webratio.commons.transform.groovy.mixin.DispatcherClosure.doInvoke(DispatcherClosure.java:79)
+	at com.webratio.commons.transform.groovy.mixin.DispatcherClosure.call(DispatcherClosure.java:74)
+	at jdk.internal.reflect.GeneratedMethodAccessor61.invoke(Unknown Source)
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at Assemble/Bundle_template.&lt;main&gt;(Bundle.template:9)
+	at com.webratio.commons.transform.groovy.GroovyTemplate.evaluateObject(GroovyTemplate.java:269)
+	at com.webratio.commons.transform.groovy.GroovyTemplate.evaluateScript(GroovyTemplate.java:203)
+	at com.webratio.commons.transform.groovy.GroovyTemplate.evaluate(GroovyTemplate.java:178)
+	at com.webratio.commons.transform.groovy.Script2$ExecuteTemplateClosure.doCall(Script2.java:142)
+	at jdk.internal.reflect.GeneratedMethodAccessor83.invoke(Unknown Source)
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at query_helpers_TemplateHelper_template_3f146492$_run_closure1.doCall(query_helpers_TemplateHelper_template_3f146492:6)
+	at jdk.internal.reflect.GeneratedMethodAccessor104.invoke(Unknown Source)
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at Assemble/Main_template.&lt;main&gt;(Main.template:29)
+	at com.webratio.commons.transform.groovy.GroovyTemplate.evaluateObject(GroovyTemplate.java:269)
+	at com.webratio.commons.transform.groovy.GroovyTemplate.evaluateScript(GroovyTemplate.java:203)
+	at com.webratio.commons.transform.groovy.GroovyTemplate.evaluate(GroovyTemplate.java:178)
+	at com.webratio.commons.transform.groovy.Script2$ExecuteTemplateClosure.doCall(Script2.java:142)
+	at jdk.internal.reflect.GeneratedMethodAccessor83.invoke(Unknown Source)
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at query_helpers_TemplateHelper_template_3f146492$_run_closure1.doCall(query_helpers_TemplateHelper_template_3f146492:6)
+	at jdk.internal.reflect.GeneratedMethodAccessor104.invoke(Unknown Source)
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at App/Main_template.&lt;main&gt;(Main.template:50)
+	at com.webratio.commons.transform.groovy.GroovyTemplate.evaluateObject(GroovyTemplate.java:269)
+	at com.webratio.commons.transform.groovy.GroovyTemplate.evaluateScript(GroovyTemplate.java:203)
+	at com.webratio.commons.transform.groovy.GroovyTemplate.evaluate(GroovyTemplate.java:178)
+	at com.webratio.commons.transform.groovy.GroovyRunner.evaluateTemplate(GroovyRunner.java:362)
+	at com.webratio.commons.transform.groovy.GroovyRunner.access$1(GroovyRunner.java:344)
+	at com.webratio.commons.transform.groovy.GroovyRunner$TemplateEvaluator.evaluate(GroovyRunner.java:323)
+	at com.webratio.generator.webclient.Generator.doGenerateApp(Generator.java:327)
+	at com.webratio.generator.webclient.Generator.generateApp(Generator.java:309)
+	at com.webratio.project.build.compiler.tasks.WebProjectGeneratorTask.execute(WebProjectGeneratorTask.java:102)
+	at com.webratio.project.build.compiler.WebProjectCompiler.compile(WebProjectCompiler.java:57)
+	at com.webratio.project.build.tool.ProjectGenerator.generate(ProjectGenerator.java:259)
+	at com.webratio.ide.deploy.core.web.jobs.GenerateWebClientAppJob.doRun(GenerateWebClientAppJob.java:101)
+	at com.webratio.ide.deploy.core.jobs.AbstractDeploymentJob.runExternal(AbstractDeploymentJob.java:85)
+	at com.webratio.commons.mf.jobs.ExternalJob.run(ExternalJob.java:49)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+</Cause>  </Exception></Generation>

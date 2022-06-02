@@ -1,0 +1,14 @@
+<wr-page>
+  <wr-content for="breadcrumb">
+    <wd-alert></wd-alert>
+  </wr-content>
+  <wr-content for="user">
+    <wd-image staticImage="assets/WebDefault/images/avatar-placeholder.png"></wd-image>
+  </wr-content>
+  <wr-content for="menu">
+    {{ 'Universidad Nacional de Salta' | wrLocalize }}
+  </wr-content>
+  <wr-content for="page-content">
+    <wd-menu></wd-menu>
+  </wr-content>
+</wr-page>

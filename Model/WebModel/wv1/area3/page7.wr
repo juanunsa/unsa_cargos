@@ -1,0 +1,13 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="250" gr:y="205" id="wv1#area3#page7" name="nuevo usuario">
+  <ViewComponents>
+    <Form gr:x="0" gr:y="0" id="wv1#area3#page7#frm3" name="Form 3">
+      <DataBinding classServiceRes="User"/>
+      <ConditionalExpression id="wv1#area3#page7#frm3#sc2" defaultPolicy="emptyAlwaysApplied" booleanOperator="and">
+        <KeyCondition id="wv1#area3#page7#frm3#sc2#kcond2" name="KeyCondition2" predicate="in" implied="false"/>
+      </ConditionalExpression>
+    </Form>
+  </ViewComponents>
+  <layout:Grid containerType="grid">
+    <layout:Row/>
+  </layout:Grid>
+</Page>

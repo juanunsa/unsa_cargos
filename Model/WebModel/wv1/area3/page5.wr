@@ -1,0 +1,10 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="625" gr:y="5" id="wv1#area3#page5" name="Pedidos" landmark="true">
+  <ViewComponents>
+    <List gr:x="0" gr:y="0" id="wv1#area3#page5#lst6" checkable="false" distinct="false" name="Pedidos">
+      <DataBinding classServiceRes="cls14"/>
+    </List>
+  </ViewComponents>
+  <layout:Grid containerType="grid">
+    <layout:Row/>
+  </layout:Grid>
+</Page>

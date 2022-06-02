@@ -1,0 +1,12 @@
+<wr-page>
+  <wr-content for="page-content"></wr-content>
+  <wr-content for="user">
+    <wd-icon iconText="account_balance"></wd-icon>
+  </wr-content>
+  <wr-content for="menu">
+    {{ 'Universidad Nacional de Salta' | wrLocalize }}
+  </wr-content>
+</wr-page>
+<wd-icon></wd-icon>
+text
+

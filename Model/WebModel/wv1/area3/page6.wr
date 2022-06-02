@@ -1,0 +1,13 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="385" gr:y="0" id="wv1#area3#page6" name="Tribunales" landmark="true">
+  <ViewComponents>
+    <List gr:x="0" gr:y="0" id="wv1#area3#page6#lst5" checkable="false" distinct="false" name="Tribunales">
+      <DataBinding classServiceRes="cls13"/>
+      <DisplayAttributes classServiceAttribute="cls13#att42"/>
+      <DisplayAttributes classServiceAttribute="cls13#att49"/>
+      <SortAttributes classServiceAttribute="cls13#att42" order="ascending"/>
+    </List>
+  </ViewComponents>
+  <layout:Grid containerType="grid">
+    <layout:Row/>
+  </layout:Grid>
+</Page>

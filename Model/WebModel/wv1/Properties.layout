@@ -1,0 +1,18 @@
+<wr-page>
+  <wr-content for="breadcrumb">
+    <wd-alert></wd-alert>
+  </wr-content>
+  <wr-content for="page-content">
+    <wd-grid-list>
+      <wr-content for="blank-state">
+        {{ &#039;No results&#039; | wrLocalize }}
+      </wr-content>
+    </wd-grid-list>
+  </wr-content>
+  <wr-content for="menu">
+    <h1>
+      Heading
+    </h1>
+  </wr-content>
+
+</wr-page>

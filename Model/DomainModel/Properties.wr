@@ -1,0 +1,62 @@
+<DomainModel xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:srs="http://www.webratio.com/2017/IFML/ServerResources" xmlns:srsvalidation="http://www.webratio.com/2017/IFML/ServerValidation">
+  <Class gr:x="150" gr:y="160" id="WUser" name="App User" singleton="true" attributeOrder="wUserOID wUsername">
+    <Attribute id="wUserOID" key="true" name="oid" type="integer"/>
+    <Attribute id="wUsername" name="username" type="string"/>
+  </Class>
+  <Class gr:x="450" gr:y="170" id="WRole" name="App Role" attributeOrder="wRoleOID wRoleName">
+    <Attribute id="wRoleOID" key="true" name="oid" type="integer"/>
+    <Attribute id="wRoleName" name="name" type="string"/>
+  </Class>
+  <Association id="WUser2WRole_WRole2WUser" name="AppUser_AppRole" sourceClass="WUser" targetClass="WRole">
+    <AssociationRole1 id="WUser2WRole" name="AppUserToAppRole" maxCard="N"/>
+    <AssociationRole2 id="WRole2WUser" name="AppRoleToAppUser" maxCard="1"/>
+  </Association>
+  <srs:Resources>
+    <srs:ActionService ref="tlads0#ada1" name="guardar_pedido" defaultSuccessPortDefinition="tlads0#ada1#spd1" defaultErrorPortDefinition="tlads0#ada1#epd1" serverResourceName="actions/guardarPedido" method="create">
+      <srs:Input ref="tlads0#ada1#ipd1#pdp1" serverProperty="categoria" name="categoria" type="string" location="body" cardinality="N"/>
+      <srs:Input ref="tlads0#ada1#ipd1#pdp2" serverProperty="cargo" name="cargo" type="string" location="body" cardinality="N">
+        <srs:ServerResourceValidation>
+          <srsvalidation:ValidationRule type="LikeValidationRule" name="Like1" predicate="contains" value="JTP" ignoreCase="true"/>
+        </srs:ServerResourceValidation>
+      </srs:Input>
+      <srs:Input ref="tlads0#ada1#ipd1#pdp3" serverProperty="materia" name="materia" type="integer" location="body" cardinality="N"/>
+      <srs:Input ref="tlads0#ada1#ipd1#pdp5" serverProperty="tribunal" name="tribunal" type="integer" location="body" cardinality="N"/>
+    </srs:ActionService>
+    <srs:ClassService ref="cls14" serverResourceName="data/Pedido" name="Pedido">
+      <srs:Attribute ref="cls14#att50" serverProperty="oid" name="oid" type="integer" key="true"/>
+      <srs:Attribute ref="cls14#att51" serverProperty="cargo" name="cargo" type="string"/>
+      <srs:Attribute ref="cls14#att52" serverProperty="materia" name="materia" type="integer"/>
+      <srs:Attribute ref="cls14#att53" serverProperty="categoria" name="categoria" type="string"/>
+      <srs:Attribute ref="cls14#att54" serverProperty="tribunal" name="tribunal" type="integer"/>
+    </srs:ClassService>
+    <srs:ClassService ref="cls11" serverResourceName="data/Carrera" name="Carrera">
+      <srs:Attribute ref="cls11#att38" serverProperty="oid" name="oid" type="integer" key="true"/>
+      <srs:Attribute ref="cls11#att39" serverProperty="nombre" name="nombre" type="string"/>
+    </srs:ClassService>
+    <srs:ClassService ref="User" serverResourceName="data/User" name="User">
+      <srs:Attribute ref="userName" serverProperty="userID" name="User ID" type="string" key="true"/>
+      <srs:Attribute ref="secretKey" serverProperty="secretKey" name="Secret Key" type="password"/>
+    </srs:ClassService>
+    <srs:ClassService ref="cls13" serverResourceName="data/Tribunal" name="Tribunal">
+      <srs:Attribute ref="cls13#att42" serverProperty="oid" name="oid" type="integer" key="true"/>
+      <srs:Attribute ref="cls13#att43" serverProperty="titular" name="titular" type="integer"/>
+      <srs:Attribute ref="cls13#att44" serverProperty="titular2" name="titular2" type="integer"/>
+      <srs:Attribute ref="cls13#att45" serverProperty="titular3" name="titular3" type="integer"/>
+      <srs:Attribute ref="cls13#att46" serverProperty="suplente1" name="suplente1" type="integer"/>
+      <srs:Attribute ref="cls13#att47" serverProperty="suplente2" name="suplente2" type="integer"/>
+      <srs:Attribute ref="cls13#att48" serverProperty="suplente3" name="suplente3" type="integer"/>
+      <srs:Attribute ref="cls13#att49" serverProperty="pedido" name="pedido" type="integer"/>
+    </srs:ClassService>
+    <srs:ClassService ref="cls12" serverResourceName="data/Materia" name="materia">
+      <srs:Attribute ref="cls12#att40" serverProperty="oid" name="oid" type="integer" key="true"/>
+      <srs:Attribute ref="cls12#att41" serverProperty="nombre" name="nombre" type="string"/>
+    </srs:ClassService>
+    <srs:ClassService ref="cls10" serverResourceName="data/Facultad" name="Facultad">
+      <srs:Attribute ref="cls10#att36" serverProperty="oid" name="oid" type="integer" key="true"/>
+      <srs:Attribute ref="cls10#att37" serverProperty="nombre" name="nombre" type="string"/>
+    </srs:ClassService>
+    <srs:UserService name="User" ref="UserService" serverResourceName="User" userServiceOperationTypes="read register update">
+      <srs:UserAttribute ref="userName" serverProperty="userID" name="User ID" type="string" key="true"/>
+    </srs:UserService>
+  </srs:Resources>
+</DomainModel>

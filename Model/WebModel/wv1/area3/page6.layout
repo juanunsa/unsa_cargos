@@ -1,0 +1,29 @@
+<wr-page>
+  <wr-content for="menu">
+    {{ 'Tribunales evaluadores' | wrLocalize }}
+  </wr-content>
+  <wr-content for="page-content">
+    <wd-grid>
+      <wd-row>
+        <wd-cell [width]="6">
+          <wd-grid-list rows="value:valueOf('main/lst5/data')">
+            <wr-content for="blank-state">
+              {{ &#039;No results&#039; | wrLocalize }}
+            </wr-content>
+            <wr-content for="item">
+              <wd-card>
+                <wr-content for="content">
+                  
+                <wd-container></wd-container>
+                {{ labelOf('main/lst5') | wrLocalize }}
+              
+                </wr-content>
+              </wd-card>
+            </wr-content>
+          
+          </wd-grid-list>
+        </wd-cell>
+      </wd-row>
+    </wd-grid>
+  </wr-content>
+</wr-page>
